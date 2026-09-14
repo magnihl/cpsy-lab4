@@ -13,7 +13,7 @@ from adafruit_mcp3xxx.mcp3008 import MCP3008
 
 VREF = 3.3
 
-spi = busio.SPI(board.SCK, board.MISO, board.MOSI)
+spi = busio.SPI(board.SCK, MOSI=board.MOSI, MISO=board.MISO)
 adc = MCP3008(spi, digitalio.DigitalInOut(board.D8))
 
 while True:
