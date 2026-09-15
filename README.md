@@ -7,5 +7,7 @@ Runs on the Pi with the lab 2 environment plus the ADC driver:
 
     ~/cpsy-display-ip/cpsy/bin/pip install adafruit-circuitpython-mcp3xxx
     ~/cpsy-display-ip/cpsy/bin/python raw.py
+    ~/cpsy-display-ip/cpsy/bin/python collect.py
 
 - `raw.py` prints raw value and volts twice a second.
+- `collect.py` records one ADC and one multimeter reading per distance to `adc.csv`.
