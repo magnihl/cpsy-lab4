@@ -10,4 +10,4 @@ Runs on the Pi with the lab 2 environment plus the ADC driver:
     ~/cpsy-display-ip/cpsy/bin/python collect.py
 
 - `raw.py` prints raw value and volts twice a second.
-- `collect.py` records one ADC and one multimeter reading per distance to `adc.csv`.
+- `collect.py` walks 10 to 150 cm, enter per step, one median ADC reading per step to `adc.csv`.
